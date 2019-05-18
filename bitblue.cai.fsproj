@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Result.fs" />
+    <Compile Include="Utils.fs" />
+    <Compile Include="Permission.fs" />
+    <Compile Include="CacheStores.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Data\DataUtils.fs" />
+    <Compile Include="Data\TheBeta.fs" />
+    <Compile Include="Data\Reporting.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Actors\Subscriptions.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Explorer\ExplorerService.fs" />
+    <Compile Include="Explorer\ExplorerCombinators.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Fable.JsonConverter" Version="1.0.8" />
+    <PackageReference Include="Hopac" Version="0.4.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.6.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\bitblue.utilities\bitblue.utilities.fsproj" />
+    <ProjectReference Include="..\Hopac.Actors\Hopac.Actors.fsproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="FSharp.Core" Version="4.6.2" />
+  </ItemGroup>
+
+</Project>
